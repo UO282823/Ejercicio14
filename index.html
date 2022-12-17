@@ -1,138 +1,115 @@
-<html lang="es"><head>
-        <meta charset="UTF-8">
-        <title>Ejercicio6</title>
-        <meta name="author" content="Hugo Pulido Pensado">
-        <meta name="description" content="Base de datos pruebas">
-        <meta name="keywords" content="Ejercicio 6, Ejercicio, 6">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-        <link rel="stylesheet" type="text/css" href="Ejercicio6.css">
+
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio7</title>
+        <meta name="author" content="Hugo Pulido Pensado" />
+        <meta name="description" content="Base de datos tiendas" />
+        <meta name ="keywords" content ="Ejercicio 7, Ejercicio, 7" />
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />  
+        <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
     </head>
     <body>
 
     
     
-    <h1>Pruebas de usabilidad</h1>
-
-    <nav>
-          <a title="Crear base de datos" accesskey="C" tabindex="1" href="#crearBase">Crear base de datos</a>
-          <a title="Crear tabla" accesskey="T" tabindex="2" href="#tabla">Crear tabla</a>
-          <a title="Insertar datos" accesskey="I" tabindex="3" href="#insertar">Insertar datos</a>
-          <a title="Buscar datos" accesskey="B" tabindex="4" href="#buscar">Buscar datos</a>
-          <a title="Modificar datos" accesskey="M" tabindex="5" href="#modificar">Modificar datos</a>
-          <a title="Eliminar datos" accesskey="E" tabindex="6" href="#eliminar">Eliminar datos</a>
-          <a title="Generar informe" accesskey="G" tabindex="7" href="#informe">Generar informe</a>
-          <a title="Importar CSV" accesskey="P" tabindex="8" href="#importar">Importar CSV</a>
-          <a title="Exportar CSV" accesskey="X" tabindex="9" href="#exportar">Exportar CSV</a>
-         
-      </nav>
+    <h1>Tiendas</h1>
     
-    <article><h2>Conexión establecida</h2><p>Informe:</p><ul><li>Edad media: 20.333333333333</li><li>Hombres: 66.666666666667%</li><li>Mujeres: 33.333333333333%</li><li>Nivel medio: 6</li><li>Tiempo medio: 107.33333333333</li><li>Realizados correctamente: 66.666666666667%</li><li>Valoracion media: 4.3333333333333</li></ul></article>
-     
-      <section id="crearBase">
 
-        <h2>Crear base de datos</h2>
-        <form action="#" method="post">
-            <input type="submit" name="crear" value="Crear">
-        </form>
-      </section>
 
-      <section id="tabla">
-        <h2>Crear tabla</h2>
-        <form action="#" method="post">
-            <input type="submit" name="tabla" value="Crear">
-        </form>
-      </section>
-
-      <section id="insertar">
-        <h2>Insertar datos</h2>
+    <section>
+        <h2>Añadir tienda:</h2>
         <form action="#" method="post">
             <fieldset>
-                <p> <label for="dni">DNI: </label><input type="text" name="dni" id="dni"></p>
-               <p> <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre"></p>
-               <p><label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos"></p>
-               <p><label for="mail">Mail: </label><input type="text" name="mail" id="mail"></p>
-                <p><label for="telf">Teléfono: </label><input type="text" name="telf" id="telf"></p>
-                <p><label for="edad">Edad: </label><input type="number" name="edad" id="edad" value="20" min="1" max="120" step="1"></p>
-                <p><label for="sexo">Sexo(H/M): </label><input type="text" maxlength="1" name="sexo" id="sexo"></p>
-                <p><label for="nivel">Nivel: </label><input type="number" name="nivel" id="nivel" value="5" min="1" max="10" step="1"></p>
-                <p><label for="tiempo">Tiempo:</label><input type="text" name="tiempo" id="tiempo"></p>
-                <p><label for="realizado">Realizado(S/N): </label><input type="text" maxlength="1" name="realizado" id="realizado"></p>
-                <p><label for="comentarios">Comentarios: </label><input type="text" name="comentarios" id="comentarios"></p>
-                <p><label for="propuestas">Propuestas: </label><input type="text" name="propuestas" id="propuestas"></p>
-                <p><label for="valoracion">Valoracion: </label><input type="number" name="valoracion" id="valoracion" value="5" min="1" max="10" step="1"></p>
-                
+                <p> <label for="nombreTienda">Nombre de la tienda: </label><input type="text" name="nombreTienda" id="nombreTienda"></p>
+                <p> <label for="direccionTienda">Direccion: </label><input type="text" name="direccionTienda" id="direccionTienda"></p>
             </fieldset>
-            <input type="submit" name="insertar" value="Insertar">
+            <input type="submit" name="anadirTienda" value="Añadir">
         </form>
-      </section>
+    </section>
 
-      <section id="buscar">
-        <h2>Buscar datos</h2>
+    <section>
+        <h2>Añadir empleado</h2>
         <form action="#" method="post">
-        <label for="buscardni">DNI: </label><input type="text" name="buscardni" id="buscardni">
-        <input type="submit" name="buscar" value="Buscar">
-        </form>
-      </section>
-
-      <section id="modificar">
-        <h2>Modificar datos</h2>
-        <form action="#" method="post">
-        <fieldset>
-                <p> <label for="dnimodificar">DNI a moficar: </label><input type="text" name="dnimodificar" id="dnimodificar"></p>
-               <p> <label for="nombremodificar">Nombre modificado: </label><input type="text" name="nombremodificar" id="nombremodificar"></p>
-               <p><label for="apellidosmodificar">Apellidos modificado: </label><input type="text" name="apellidosmodificar" id="apellidosmodificar"></p>
-               <p><label for="mailmodificar">Mail modificado: </label><input type="text" name="mailmodificar" id="mailmodificar"></p>
-                <p><label for="telfmodificar">Teléfono modificado: </label><input type="text" name="telfmodificar" id="telfmodificar"></p>
-                <p><label for="edadmodificar">Edad modificado: </label><input type="number" name="edadmodificar" id="edadmodificar" value="20" min="1" max="120" step="1"></p>
-                <p><label for="sexomodificar">Sexo(H/M) modificado: </label><input type="text" maxlength="1" name="sexomodificar" id="sexomodificar"></p>
-                <p><label for="nivelmodificar">Nivel modificado: </label><input type="number" name="nivelmodificar" id="nivelmodificar" value="5" min="1" max="10" step="1"></p>
-                <p><label for="tiempomodificar">Tiempo modificado:</label><input type="text" name="tiempomodificar" id="tiempomodificar"></p>
-                <p><label for="realizadomodificar">Realizado(S/N) modificado: </label><input type="text" maxlength="1" name="realizadomodificar" id="realizadomodificar"></p>
-                <p><label for="comentariosmodificar">Comentarios modificado: </label><input type="text" name="comentariosmodificar" id="comentariosmodificar"></p>
-                <p><label for="propuestasmodificar">Propuestas modificado: </label><input type="text" name="propuestasmodificar" id="propuestasmodificar"></p>
-                <p><label for="valoracionmodificar">Valoracion modificado: </label><input type="number" name="valoracionmodificar" id="valoracionmodificar" value="5" min="1" max="10" step="1"></p>
-                
+            <fieldset>
+                <p> <label for="idEmpleado">Id del empleado: </label><input type="text" name="idEmpleado" id="idEmpleado"></p>
+                <p> <label for="nombreEmpleado">Nombre: </label><input type="text" name="nombreEmpleado" id="nombreEmpleado"></p>
+                <p> <label for="apellidosEmpleado">Apellidos: </label><input type="text" name="apellidosEmpleado" id="apellidosEmpleado"></p>
+                <p> <label for="direccionEmpleado">Direccion: </label><input type="text" name="direccionEmpleado" id="direccionEmpleado"></p>
             </fieldset>
-            <input type="submit" name="modificar" value="Modificar">
+            <input type="submit" name="anadirEmpleado" value="Añadir">
         </form>
-      </section>
+    </section>
 
-      <section id="eliminar">
-        <h2>Eliminar datos</h2>
+    <section>
+        <h2>Añadir producto</h2>
         <form action="#" method="post">
-        <label for="dnieliminar">DNI a eliminar: </label><input type="text" name="dnieliminar" id="dnieliminar">
-        <input type="submit" name="eliminar" value="Eliminar">
+            <fieldset>
+                <p> <label for="idProducto">Id del producto: </label><input type="text" name="idProducto" id="idProducto"></p>
+                <p> <label for="precio">Precio: </label><input type="text" name="precio" id="precio"></p>
+                <p> <label for="nombreProducto">Nombre: </label><input type="text" name="nombreProducto" id="nombreProducto"></p>
+               
+            </fieldset>
+            <input type="submit" name="anadirProducto" value="Añadir">
         </form>
-      </section>
+    </section>
 
-      <section id="informe">
-        <h2>Generar informe</h2>
+    <section>
+        <h2>Añadir contrato</h2>
         <form action="#" method="post">
-        <input type="submit" name="informe" value="Generar informe">
+            <fieldset>
+                <p> <label for="empleadoContrato">Id del empleado: </label><input type="text" name="empleadoContrato" id="empleadoContrato"></p>
+                <p> <label for="tiendaContrato">Tienda: </label><input type="text" name="tiendaContrato" id="tiendaContrato"></p>
+                <p> <label for="salario">Salario: </label><input type="text" name="salario" id="salario"></p>
+               
+            </fieldset>
+            <input type="submit" name="anadirContrato" value="Añadir">
         </form>
-      </section>
+    </section>
 
-      <section id="importar">
-        <h2>Importar csv</h2>
-        <form action="#" method="post" enctype="multipart/form-data">
-            <p><label for="filecsv">Csv a importar: </label><input type="file" name="filecsv" id="filecsv"></p>
-            <input type="submit" name="importarCSV" value="Importar">
-        </form>
-      </section>
-
-      <section id="exportar">
-        <h2>Exportar csv</h2>
+    <section>
+        <h2>Añadir venta</h2>
         <form action="#" method="post">
-            <input type="submit" name="exportarCVS" value="Exportar datos">
+            <fieldset>
+                <p> <label for="productoVenta">Id del producto: </label><input type="text" name="productoVenta" id="productoVenta"></p>
+                <p> <label for="tiendaVenta">Tienda: </label><input type="text" name="tiendaVenta" id="tiendaVenta"></p>
+                <p> <label for="fecha">Salario: </label><input type="date" name="fecha" id="fecha"></p>
+               
+            </fieldset>
+            <input type="submit" name="anadirVenta" value="Añadir">
         </form>
-      </section>
+    </section>
 
+    <section>
+        <h2>Mostrar Tiendas</h2>
+        <form action="#" method="post">
+            <input type="submit" name="mostrarTienda" value="Mostrar">
+        </form>
+    </section>
 
+    <section>
+        <h2>Mostrar empleado</h2>
+        <form action="#" method="post">
+            <p> <label for="tiendaEmpleado">Tienda del empleado: </label><input type="text" name="tiendaEmpleado" id="tiendaEmpleado"></p>
+            <input type="submit" name="mostrarEmpleado" value="Mostrar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Mostrar productos vendidos</h2>
+        <form action="#" method="post">
+            <p> <label for="tiendaProductos">Tienda : </label><input type="text" name="tiendaProductos" id="tiendaProductos"></p>
+            <input type="submit" name="mostrarProductos" value="Mostrar">
+        </form>
+    </section>
+    
+     
 
 
 
 
 
     
-    
-</body></html>
+    </body>
+</html>
